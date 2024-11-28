@@ -1,0 +1,256 @@
+
+/* : main styling */
+
+@font-face {
+    font-family: nunito;
+    src: url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: RockSalt;
+    src: url("../fonts/RockSalt-Regular.ttf")
+}
+
+:root{
+    --lachs:#DF8480;
+    --footer:#242424;
+    --grey:#7B7B7B;
+    --white:white;
+    --black:black;
+
+    --width:414px;
+    --pl:padding-left: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/*: body styling */
+
+/* * header */
+
+header{
+    background-image: url("../img/dog.png");
+    background-size: cover;
+    height: 625px;
+    width: var(--width);
+    margin: 0 auto;
+}
+
+header article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;  
+    padding: 2vh 2vw;
+}
+
+
+h1{
+    font-family: RockSalt;
+    font-size: 1.6rem;
+}
+
+h2{
+    font-family: nunito;
+    font-size: 1.6 rem;
+    color: var(--lachs);
+    padding-left: 250px;
+    padding-right: 10px;
+}
+
+/* : section 1 how it works */
+
+.sec1{
+    width: var(--width);
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.sec1_head{
+    background-color: var(--lachs);
+}
+
+.sec1_head p{
+    font-family: nunito;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.sec1_steps{
+    height: 500px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    
+}
+
+.sec1E{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sec1_nb{
+    font-family: nunito;
+    color: var(--lachs);
+    font-size: 4.8rem;
+    font-weight: 800;
+}
+
+.sec1_text{
+    font-family: nunito;
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 500;  
+}
+
+/*: section 2 menu */
+
+.sec2{
+    background-color:var(white);
+    width: var(--width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2I1, .sec2I2{
+    margin-bottom:5vh ;
+}
+
+.sec2Text{
+    font-family: nunito;
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 500;  
+    text-align: center;
+    padding: 0 2vw;
+    margin-bottom: 3vh;
+}
+
+/* : footer */
+
+footer{
+    width: var(--width);
+    margin: 0 auto;
+    background-color: var(--footer);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    padding-bottom: 3vh;
+}
+
+.footerText{
+    font-family: nunito;
+    padding: 2vh 5vw;
+    text-align: center;
+}
+
+.footerText p{
+    font-size:1.6rem;
+}
+
+input{
+    background-color: var(--white);
+    width: 55vw;
+    height: 8vh;
+    border-radius: 30px;
+    text-align: center;
+    font-family: nunito;
+    font-size:1.5rem ;
+    color: var(--grey);
+}
+
+.footer-btn{
+    background-color: var(--lachs);
+    width: 55vw;
+    height: 8vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7vh;
+    cursor: pointer;
+}
+
+.footer-btn a{
+    font-family: nunito;
+    font-size:1.5rem;
+    color: var(--white);
+}
+
+.foLo{
+    display: flex;
+    gap: 8vw;
+    margin-bottom: 1vh;
+}
+
+.footerTM{
+    font-size:1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* : media queries */
+/**small */
+@media  screen and(min-width: 600px) {
+    
+}
+
+/* *medium */
+@media  screen and(min-width: 900px) {
+    
+}
+
+
+/* *large */
+@media  screen and(min-width:1200px) {
+    
+}
